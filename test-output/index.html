@@ -129,16 +129,15 @@
                   <a name="testSuccessfullLogin">
                   </a> <!-- testSuccessfullLogin -->
                   <span class="method-name">testSuccessfullLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login button&quot;}
   (Session info: chrome=142.0.7444.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [71ba70ee2fccdb84ea249b568024654f, clickElement {id=f.4E4BCC5C6280165338F42A8D581A4855.d.8403749783099846D0D6EB6FF7936393.e.9}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.136, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\penin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49274}, goog:processID: 14216, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49274/devtoo..., se:cdpVersion: 142.0.7444.136, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (71ba70ee2fccdb84ea249b568024654f)] -&gt; css selector: #login button]
-Session ID: 71ba70ee2fccdb84ea249b568024654f
+Command: [d7d7f4660be0098e28ea8fa49860667c, findElement {using=css selector, value=#login button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.136, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\penin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56913}, goog:processID: 14388, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56913/devtoo..., se:cdpVersion: 142.0.7444.136, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d7d7f4660be0098e28ea8fa49860667c
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -146,8 +145,10 @@ Session ID: 71ba70ee2fccdb84ea249b568024654f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
 	at org.example.LoginPage.clickLoginButton(LoginPage.java:25)
 	at login.LoginTests.testSuccessfullLogin(LoginTests.java:20)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
@@ -213,12 +214,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testSuccessfullLogin')
 data.setCell(0, 2, 'login.LoginTests')
-data.setCell(0, 3, 2327);
+data.setCell(0, 3, 4560);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -253,11 +254,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testSuccessfullLogin</span>
-                <span class="method-start">5748 ms</span>
+                <span class="method-start">9677 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8079 ms</span>
+                <span class="method-start">14240 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

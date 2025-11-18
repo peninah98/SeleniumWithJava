@@ -2,40 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-18T17:21:33 SAST" name="Command line suite" finished-at="2025-11-18T17:21:41 SAST" duration-ms="8370">
+  <suite started-at="2025-11-18T18:43:41 SAST" name="Command line suite" finished-at="2025-11-18T18:43:56 SAST" duration-ms="14655">
     <groups>
     </groups>
-    <test started-at="2025-11-18T17:21:33 SAST" name="Command line test" finished-at="2025-11-18T17:21:41 SAST" duration-ms="8370">
+    <test started-at="2025-11-18T18:43:41 SAST" name="Command line test" finished-at="2025-11-18T18:43:56 SAST" duration-ms="14655">
       <class name="login.LoginTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@4e718207]" started-at="2025-11-18T17:21:33 SAST" name="setUp" finished-at="2025-11-18T17:21:39 SAST" duration-ms="5729" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@4e718207]" started-at="2025-11-18T18:43:41 SAST" name="setUp" finished-at="2025-11-18T18:43:51 SAST" duration-ms="9605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSuccessfullLogin()[pri:0, instance:login.LoginTests@4e718207]" started-at="2025-11-18T17:21:39 SAST" name="testSuccessfullLogin" finished-at="2025-11-18T17:21:41 SAST" duration-ms="2327" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method signature="testSuccessfullLogin()[pri:0, instance:login.LoginTests@4e718207]" started-at="2025-11-18T18:43:51 SAST" name="testSuccessfullLogin" finished-at="2025-11-18T18:43:56 SAST" duration-ms="4560" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[stale element reference: stale element not found
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#login button"}
   (Session info: chrome=142.0.7444.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.37.0', revision: '3c1da1e342'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [71ba70ee2fccdb84ea249b568024654f, clickElement {id=f.4E4BCC5C6280165338F42A8D581A4855.d.8403749783099846D0D6EB6FF7936393.e.9}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.136, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\penin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49274}, goog:processID: 14216, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49274/devtoo..., se:cdpVersion: 142.0.7444.136, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (71ba70ee2fccdb84ea249b568024654f)] -> css selector: #login button]
-Session ID: 71ba70ee2fccdb84ea249b568024654f]]>
+Command: [d7d7f4660be0098e28ea8fa49860667c, findElement {using=css selector, value=#login button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.136, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\penin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56913}, goog:processID: 14388, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56913/devtoo..., se:cdpVersion: 142.0.7444.136, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d7d7f4660be0098e28ea8fa49860667c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login button"}
   (Session info: chrome=142.0.7444.136)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.37.0', revision: '3c1da1e342'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [71ba70ee2fccdb84ea249b568024654f, clickElement {id=f.4E4BCC5C6280165338F42A8D581A4855.d.8403749783099846D0D6EB6FF7936393.e.9}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.136, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\penin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49274}, goog:processID: 14216, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49274/devtoo..., se:cdpVersion: 142.0.7444.136, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (71ba70ee2fccdb84ea249b568024654f)] -> css selector: #login button]
-Session ID: 71ba70ee2fccdb84ea249b568024654f
+Command: [d7d7f4660be0098e28ea8fa49860667c, findElement {using=css selector, value=#login button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.136, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\penin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56913}, goog:processID: 14388, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56913/devtoo..., se:cdpVersion: 142.0.7444.136, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d7d7f4660be0098e28ea8fa49860667c
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -46,8 +44,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
 at org.example.LoginPage.clickLoginButton(LoginPage.java:25)
 at login.LoginTests.testSuccessfullLogin(LoginTests.java:20)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -76,11 +76,11 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at base.BaseTests.main(BaseTests.java:41)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfullLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@4e718207]" started-at="2025-11-18T17:21:41 SAST" name="tearDown" finished-at="2025-11-18T17:21:41 SAST" duration-ms="265" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@4e718207]" started-at="2025-11-18T18:43:56 SAST" name="tearDown" finished-at="2025-11-18T18:43:56 SAST" duration-ms="352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
