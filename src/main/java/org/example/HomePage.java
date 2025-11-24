@@ -31,7 +31,7 @@ public class HomePage {
 
     public AlertsPage clickJavaScriptAlerts(){
         clickLink("JavaScript Alerts");
-        return  new AlertsPage();
+        return  new AlertsPage(driver);
     }
 
     private void clickLink(String linkText){
