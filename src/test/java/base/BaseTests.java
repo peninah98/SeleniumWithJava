@@ -11,10 +11,17 @@ import org.testng.annotations.BeforeClass;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class BaseTests {
     private WebDriver  driver;
     protected HomePage homePage;
+
+    @BeforeClass
+    public void suppressWarnings() {
+        Logger.getLogger("org.openqa.selenium").setLevel(Level.SEVERE);
+    }
 
     @BeforeClass
     public void setUp() {

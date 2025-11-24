@@ -24,8 +24,14 @@ public class HomePage {
     }
 
     public KeyPressPage clickKeyPress(){
-        clickLink("Key Press");
+        clickLink("Key Presses");
         return new KeyPressPage(driver);
+
+    }
+
+    public AlertsPage clickJavaScriptAlerts(){
+        clickLink("JavaScript Alerts");
+        return  new AlertsPage();
     }
 
     private void clickLink(String linkText){
