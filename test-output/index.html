@@ -130,14 +130,14 @@
                   </a> <!-- testSuccessfullLogin -->
                   <span class="method-name">testSuccessfullLogin</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login button&quot;}
-  (Session info: chrome=142.0.7444.136)
+  (Session info: chrome=142.0.7444.176)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d7d7f4660be0098e28ea8fa49860667c, findElement {using=css selector, value=#login button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.136, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\penin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56913}, goog:processID: 14388, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56913/devtoo..., se:cdpVersion: 142.0.7444.136, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d7d7f4660be0098e28ea8fa49860667c
+Command: [7abb1679967517dfd9863d03179844ae, findElement {value=#login button, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\penin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63260}, goog:processID: 25116, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63260/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7abb1679967517dfd9863d03179844ae
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -152,7 +152,7 @@ Session ID: d7d7f4660be0098e28ea8fa49860667c
 	at org.example.LoginPage.clickLoginButton(LoginPage.java:25)
 	at login.LoginTests.testSuccessfullLogin(LoginTests.java:20)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at base.BaseTests.main(BaseTests.java:41)
+	at base.BaseTests.main(BaseTests.java:37)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -214,7 +214,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testSuccessfullLogin')
 data.setCell(0, 2, 'login.LoginTests')
-data.setCell(0, 3, 4560);
+data.setCell(0, 3, 4027);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
@@ -250,15 +250,23 @@ return data;
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">suppressWarnings</span>
+                <span class="method-start">9465 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">goHome</span>
+                <span class="method-start">9498 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testSuccessfullLogin</span>
-                <span class="method-start">9677 ms</span>
+                <span class="method-start">9997 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14240 ms</span>
+                <span class="method-start">14030 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
