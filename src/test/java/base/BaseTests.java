@@ -55,6 +55,3 @@ public class BaseTests {
         homePage = new HomePage(driver);
     }
 }
-
-
-//~ Formatted by Jindent --- http://www.jindent.com
