@@ -9,10 +9,15 @@ public class WysiwygEditorPage {
     private WebDriver driver;
     private String editorIframeId = "mce_0_ifr";
     private By textArea = By.id("tinymce");
+    private By decreaseIndentButton = By.cssSelector("#cmeu_12 button");
 
-    public void WysiwygEditorPage(WebDriver driver){
+    public WysiwygEditorPage(WebDriver driver) {
         this.driver = driver;
     }
+
+//    public void WysiwygEditorPage(WebDriver driver){
+//        this.driver = driver;
+//    }
     public void clearTextArea(){
         switchToFrame();
         driver.findElement(textArea).clear();
@@ -23,8 +28,21 @@ public class WysiwygEditorPage {
         driver.findElement(textArea).sendKeys(text);
         switchToMainArea();
     }
+
+    public void decreaseIndention(){
+        driver.findElement(decreaseIndentButton).click();
+
+    }
     private void switchToFrame(){
         driver.switchTo().frame(editorIframeId);
+    }
+
+    public String getTextFormEditor(){
+        switchToFrame();
+        String text = driver.findElement(textArea).getText();
+        switchToMainArea();
+        return text;
+
     }
 
     private void switchToMainArea(){

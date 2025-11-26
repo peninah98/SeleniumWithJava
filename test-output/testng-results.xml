@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-26T11:16:48 SAST" name="Command line suite" finished-at="2025-11-26T11:16:59 SAST" duration-ms="11439">
+  <suite started-at="2025-11-26T16:50:26 SAST" name="Command line suite" finished-at="2025-11-26T16:50:41 SAST" duration-ms="15570">
     <groups>
     </groups>
-    <test started-at="2025-11-26T11:16:48 SAST" name="Command line test" finished-at="2025-11-26T11:16:59 SAST" duration-ms="11439">
+    <test started-at="2025-11-26T16:50:26 SAST" name="Command line test" finished-at="2025-11-26T16:50:41 SAST" duration-ms="15570">
       <class name="login.LoginTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@396e2f39]" started-at="2025-11-26T11:16:48 SAST" name="setUp" finished-at="2025-11-26T11:16:55 SAST" duration-ms="7367" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@396e2f39]" started-at="2025-11-26T16:50:26 SAST" name="setUp" finished-at="2025-11-26T16:50:35 SAST" duration-ms="9617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="suppressWarnings()[pri:0, instance:login.LoginTests@396e2f39]" started-at="2025-11-26T11:16:55 SAST" name="suppressWarnings" finished-at="2025-11-26T11:16:55 SAST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="suppressWarnings()[pri:0, instance:login.LoginTests@396e2f39]" started-at="2025-11-26T16:50:35 SAST" name="suppressWarnings" finished-at="2025-11-26T16:50:35 SAST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suppressWarnings -->
-        <test-method is-config="true" signature="goHome()[pri:0, instance:login.LoginTests@396e2f39]" started-at="2025-11-26T11:16:55 SAST" name="goHome" finished-at="2025-11-26T11:16:56 SAST" duration-ms="593" status="PASS">
+        <test-method is-config="true" signature="goHome()[pri:0, instance:login.LoginTests@396e2f39]" started-at="2025-11-26T16:50:35 SAST" name="goHome" finished-at="2025-11-26T16:50:36 SAST" duration-ms="485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method signature="testSuccessfullLogin()[pri:0, instance:login.LoginTests@396e2f39]" started-at="2025-11-26T11:16:56 SAST" name="testSuccessfullLogin" finished-at="2025-11-26T11:16:59 SAST" duration-ms="2953" status="FAIL">
+        <test-method signature="testSuccessfullLogin()[pri:0, instance:login.LoginTests@396e2f39]" started-at="2025-11-26T16:50:36 SAST" name="testSuccessfullLogin" finished-at="2025-11-26T16:50:41 SAST" duration-ms="4638" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#login button"}
@@ -28,9 +28,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.37.0', revision: '3c1da1e342'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4308241823956d4601dd328a7785b808, findElement {using=css selector, value=#login button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\penin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54261}, goog:processID: 17752, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54261/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4308241823956d4601dd328a7785b808]]>
+Command: [7353718d0f4d2d3445bcb1bd27ebcdff, findElement {value=#login button, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\penin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56438}, goog:processID: 11176, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56438/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7353718d0f4d2d3445bcb1bd27ebcdff]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login button"}
@@ -39,9 +39,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.37.0', revision: '3c1da1e342'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4308241823956d4601dd328a7785b808, findElement {using=css selector, value=#login button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\penin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54261}, goog:processID: 17752, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54261/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4308241823956d4601dd328a7785b808
+Command: [7353718d0f4d2d3445bcb1bd27ebcdff, findElement {value=#login button, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\penin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56438}, goog:processID: 11176, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56438/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7353718d0f4d2d3445bcb1bd27ebcdff
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -88,7 +88,7 @@ at base.BaseTests.main(BaseTests.java:37)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfullLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@396e2f39]" started-at="2025-11-26T11:16:59 SAST" name="tearDown" finished-at="2025-11-26T11:16:59 SAST" duration-ms="410" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@396e2f39]" started-at="2025-11-26T16:50:41 SAST" name="tearDown" finished-at="2025-11-26T16:50:41 SAST" duration-ms="706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

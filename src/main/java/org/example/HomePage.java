@@ -40,7 +40,7 @@ public class HomePage {
     }
     public WysiwygEditorPage clickWysiwygEditor(){
         clickLink("WYSIWYG Editor");
-        return new WysiwgEditorPage(driver);
+        return new WysiwygEditorPage(driver);
     }
 
     private void clickLink(String linkText){
