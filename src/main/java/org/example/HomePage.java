@@ -38,6 +38,10 @@ public class HomePage {
         clickLink("JavaScript Alerts");
         return  new AlertsPage(driver);
     }
+    public WysiwygEditorPage clickWysiwygEditor(){
+        clickLink("WYSIWYG Editor");
+        return new WysiwgEditorPage(driver);
+    }
 
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
