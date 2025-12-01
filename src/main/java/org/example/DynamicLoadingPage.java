@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 
 public class DynamicLoadingPage {
     private WebDriver driver;
-    private HomePage homePage;
     private String linkXPath_format = ".//a[contains(text(),'%s')]";
     private By link_Example1 = By.xpath(String.format(linkXPath_format, "Example 1: Element on page that is hidden"));
 
