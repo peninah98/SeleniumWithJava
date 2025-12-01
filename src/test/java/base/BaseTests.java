@@ -2,6 +2,7 @@ package base;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -51,6 +52,7 @@ public class BaseTests {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         driver = new ChromeDriver();
+//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         goHome();
         homePage = new HomePage(driver);
     }
