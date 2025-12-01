@@ -52,6 +52,7 @@ public class BaseTests {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         driver = new ChromeDriver();
+//        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 //        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         goHome();
         homePage = new HomePage(driver);
